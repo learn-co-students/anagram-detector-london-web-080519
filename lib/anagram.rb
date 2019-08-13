@@ -1,4 +1,3 @@
-require "pry"
 class Anagram
     attr_accessor :word
 
@@ -14,8 +13,3 @@ class Anagram
         word_array.select{|word| word.split('').sort == word_characters}
     end
 end
-
-# listen = Anagram.new("Listen")
-# word_array = %w(enlists google inlets banana)
-
-# Pry.start
